@@ -1,14 +1,18 @@
-.sticky{
+.sticky {
     position: fixed;
     top: 0;
 }
 
-sup{
-    color:blueviolet
+sup {
+    color: blueviolet
 }
 
 .equation {
     font-size: 18px;
     font-family: Arial, sans-serif;
     text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
 }
