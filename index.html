@@ -12,7 +12,7 @@
 
 <body class="pt-4">
 
-  <nav class="navbar navbar-expand-md fixed-top ">
+  <nav class="navbar navbar-expand-md sticky-top top-0 z-1 p-0">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><span class="fw-bold text-danger me-1">X</span><span
           class="small">videos</span></a>
@@ -32,6 +32,9 @@
             <a class="nav-link" href="#lineal">Lineal</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#inecuaciones">Inecuaciones</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#cuadratica">Cuadratica</a>
           </li>
           <li class="nav-item">
@@ -44,310 +47,456 @@
       </div>
     </div>
   </nav>
-  <main class="container text-center my-5">
+  <main class="container-fluid text-center">
+    <div class="row bg-success-subtle py-4">
+      <h1 id="prod.notables">Productos Notables</h1>
 
-    <h1 id="prod.notables">Productos Notables</h1>
+      <div class="equation d-flex gap-3 flex-column my-5">
 
-    <div class="equation d-flex gap-3 flex-column my-5">
+        <span>(a - b).(a + b) = a<sup>2</sup> - b<sup>2</sup> </span>
 
-      <span>(a - b).(a + b) = a<sup>2</sup> - b<sup>2</sup> </span>
+        <span>(a <span class="text-danger">±</span> b)<sup>2</sup> = a<sup>2</sup> <span class="text-danger">±</span>
+          2.a.b + b<sup>2</sup></span>
 
-      <span>(a <span class="text-danger">±</span> b)<sup>2</sup> = a<sup>2</sup> <span class="text-danger">±</span>
-        2.a.b + b<sup>2</sup></span>
+        <a class="small" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          Más ejemplos
+        </a>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body gap-3">
+            <span>(3x <span class="text-danger">-</span> 2)<sup>2</sup> = (3x)<sup>2</sup> <span
+                class="text-danger">-</span>
+              2.(3x).2 + 2<sup>2</sup></span>
 
-      <a class="small" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-        aria-controls="collapseExample">
-        Más ejemplos
+            <span>(h <span class="text-danger">+</span> 2x)<sup>2</sup> = (h)<sup>2</sup> <span
+                class="text-danger">+</span>
+              2.h.2x + (2x)<sup>2</sup></span>
+
+            <span>(-5x <span class="text-danger">+</span> 2)<sup>2</sup> = (-5x)<sup>2</sup> <span
+                class="text-danger">+</span>
+              2.(-5x).2 + (2)<sup>2</sup></span>
+
+
+          </div>
+        </div>
+        <span>(a <span class="text-danger">±</span> b)<sup>3</sup> = a<sup>3</sup> <span class="text-danger">±</span>
+          3.(a)<sup>2</sup>.b + 3.a.(b)<sup>2</sup> <span class="text-danger">±</span> b<sup>3</sup></span>
+      </div>
+    </div>
+
+    <div class="row bg-danger-subtle py-3">
+      <h1 id="complejos">Complejos</h1>
+      <div class="alert alert-danger" role="alert">
+        <p class="fst-italic">i <sup>0</sup>, i <sup>4</sup>, i <sup>8</sup> <span class="fw-bold text-success">=</span>
+          1
+        </p>
+        <p class="fst-italic">i <sup>1</sup>, i <sup>5</sup>, i <sup>9</sup> <span class="fw-bold text-success">=</span>
+          i
+        </p>
+        <p class="fst-italic">i <sup>2</sup>, i <sup>6</sup>, i <sup>10</sup> <span
+            class="fw-bold text-success">=</span>
+          -1 </p>
+        <p class="fst-italic">i <sup>3</sup>, i <sup>7</sup>, i <sup>11</sup> <span
+            class="fw-bold text-success">=</span>
+          -i </p>
+      </div>
+
+      <p>Para obtener el complejo <strong>conjugado</strong> solo cambiar el signo del <strong
+          class="text-decoration-underline">medio</strong></p>
+
+      <div class="equation">
+        <p class="fst-italic">23 <span class="text-danger">-</span> i = Z</p>
+      </div>
+
+      <p>Para obtener el complejo <strong>opuesto</strong> se cambian <strong class="text-decoration-underline">todos
+          los
+          signos</strong></p>
+
+      <div class="equation">
+        <p class="fst-italic"> <span class="text-danger">-</span> 23 <span class="text-danger">+</span> i = Z</p>
+      </div>
+    </div>
+
+
+    <div class="row bg-warning-subtle py-3">
+      <h1 id="lineal" class="mb-3">Lineal</h1>
+
+      <span class="alert alert-secondary" role="alert">
+        <h6>y = m.x + b</h6>
+      </span>
+      <div class="py-4">
+        <div class="row mb-3">
+          <h6>Paralela</h6>
+          <div class="col">
+            m<sub>1</sub> = m<sub>2</sub>
+          </div>
+          <div class="col">
+            b<sub>1</sub> != b<sub>2</sub>
+          </div>
+          <div class="col">
+            <p class="font-monospace">S.I</p>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <h6>Coincidente</h6>
+          <div class="col">
+            m<sub>1</sub> = m<sub>2</sub>
+          </div>
+          <div class="col">
+            b<sub>1</sub> = b<sub>2</sub>
+          </div>
+          <div class="col">
+            <p class="font-monospace">S.C.I</p>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <h6>Perpendicular</h6>
+          <div class="col d-flex justify-content-evenly">
+            <div>
+              m<sub>1</sub>
+            </div>
+            <div>=</div>
+            <div>
+              <span class="border-bottom border-black">-1</span><br>
+              <span>m<sub>2</sub></span>
+            </div>
+          </div>
+          <div class="col">
+            m<sub>1</sub> != m<sub>2</sub>
+          </div>
+          <div class="col">
+            <p class="font-monospace">S.C.D</p>
+          </div>
+        </div>
+      </div>
+
+      <h6><a href="#lineal">Armar la ecuación de la recta</a> conociendo la pendiente y un punto: <span
+          class="fst-italic">P(x<sub>1</sub> ; y<sub>1</sub> ) </span> </h6>
+
+      <div class="equation border py-3 my-5">
+        y - y<sub>1</sub> = m.( x - x<sub>1</sub> )
+      </div>
+
+      <h6 class="mb-3"><a href="#lineal">Armar la ecuación de la recta</a> conociendo dos puntos</h6>
+      <div class="d-flex justify-content-center equation mb-4">
+        <div>
+          <span class="border-bottom border-black">y - y<sub>1</sub></span><br>
+          <span>y<sub>2</sub> - y<sub>1</sub></span>
+        </div>
+        <div class="align-self-center">
+          =
+        </div>
+        <div>
+          <span class="border-bottom border-black">x - x<sub>1</sub></span><br>
+          <span>x<sub>2</sub> - x<sub>1</sub></span>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="row gap-5 bg-success-subtle">
+      <h1 id="inecuaciones">Inecuaciones</h1>
+      <h5 class="text-muted">Identificar que hacer en cada caso</h5>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-6">
+            <h4>Factorizada</h4>
+          </div>
+          <div class="col-6">
+            <span class="equation">(x - (1/2) ).(x + 4) < 0</span>
+          </div>
+          <div class="col-12 d-flex justify-content-center py-3">
+            <ul class="list-group text-start">
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                <label class="form-check-label stretched-link" for="firstCheckboxStretched">Encontrar los 0</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+                <label class="form-check-label stretched-link" for="secondCheckboxStretched">Ubicarlos en la
+                  recta</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+                <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Hacer el cuadro</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="four">
+                <label class="form-check-label stretched-link" for="four">Prestar atención si hay número o "x" adelante
+                  de todo</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-6">
+            <h4>Modulo</h4>
+          </div>
+          <div class="col-6">
+            <span class="equation"> -3.|x-3| -5 > 2 </span>
+          </div>
+          <div class="col-12 d-flex justify-content-center py-3">
+            <ul class="list-group text-start">
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="modulo1">
+                <label class="form-check-label stretched-link" for="modulo1">Despejar módulo</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="modulo2">
+                <label class="form-check-label stretched-link" for="modulo2">Prestar atención la dirección del
+                  "pico"</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="modulo3">
+                <label class="form-check-label stretched-link" for="modulo3"> > : Union / Dos cuentas</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="modulo3">
+                <label class="form-check-label stretched-link" for="modulo3">
+                  < : Intervalo / Una cuentas</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-6">
+            <h4>Despejar x<sup>2</sup></h4>
+          </div>
+          <div class="col-6">
+            <span class="equation">-35.x<sup>2</sup>-5 < -8</span>
+          </div>
+          <div class="col-12 d-flex justify-content-center py-3">
+            <ul class="list-group text-start">
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                <label class="form-check-label stretched-link" for="firstCheckboxStretched">Una sola "x"</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-6">
+            <h4>Cuadrática</h4>
+          </div>
+          <div class="col-6">
+            <span class="equation">3.x<sup>2</sup>+ 2.x > - 5</span>
+          </div>
+          <div class="col-12 d-flex justify-content-center py-3">
+            <ul class="list-group text-start">
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="cuadratica1">
+                <label class="form-check-label stretched-link" for="cuadratica1">Utilizar formula resolvente</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="cuadratica2">
+                <label class="form-check-label stretched-link" for="cuadratica2">Escribir de forma factorizada</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="cuadratica3">
+                <label class="form-check-label stretched-link" for="cuadratica3">Encontrar los 0</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="cuadratica3">
+                <label class="form-check-label stretched-link" for="cuadratica3"> Hacer "el cuadrito"</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+
+      <h1 id="cuadratica" class="mb-4">Cuadrática</h1>
+
+      <div class="alert alert-secondary" role="alert">
+        <span class="fst-italic">a.x<sup>2</sup>+ b.x + c</span>
+      </div>
+
+      <a class="mb-5" data-bs-toggle="collapse" href="#resultados" role="button" aria-expanded="false"
+        aria-controls="resultados">
+        Formas de la cuadrática
       </a>
-      <div class="collapse" id="collapseExample">
+
+      <div class="collapse mb-3" id="resultados">
         <div class="card card-body gap-3">
-          <span>(3x <span class="text-danger">-</span> 2)<sup>2</sup> = (3x)<sup>2</sup> <span
-              class="text-danger">-</span>
-            2.(3x).2 + 2<sup>2</sup></span>
-
-            <span>(h <span class="text-danger">+</span> 2x)<sup>2</sup> = (h)<sup>2</sup> <span class="text-danger">+</span>
-            2.h.2x + (2x)<sup>2</sup></span>
-
-            <span>(-5x <span class="text-danger">+</span> 2)<sup>2</sup> = (-5x)<sup>2</sup> <span class="text-danger">+</span>
-            2.(-5x).2 + (2)<sup>2</sup></span>
-
-
-        </div>
-      </div>
-      <span>(a <span class="text-danger">±</span> b)<sup>3</sup> = a<sup>3</sup> <span class="text-danger">±</span>
-        3.(a)<sup>2</sup>.b + 3.a.(b)<sup>2</sup> <span class="text-danger">±</span> b<sup>3</sup></span>
-    </div>
-
-
-    <h1 id="complejos">Complejos</h1>
-    <br>
-    <div  class="alert alert-light" role="alert">
-      <p class="fst-italic">i <sup>0</sup>, i <sup>4</sup>, i <sup>8</sup> <span class="fw-bold text-success">=</span> 1
-      </p>
-      <p class="fst-italic">i <sup>1</sup>, i <sup>5</sup>, i <sup>9</sup> <span class="fw-bold text-success">=</span> i
-      </p>
-      <p class="fst-italic">i <sup>2</sup>, i <sup>6</sup>, i <sup>10</sup> <span class="fw-bold text-success">=</span>
-        -1 </p>
-      <p class="fst-italic">i <sup>3</sup>, i <sup>7</sup>, i <sup>11</sup> <span class="fw-bold text-success">=</span>
-        -i </p>
-    </div>
-
-    <p>Para obtener el complejo <strong>conjugado</strong> solo cambiar el signo del <strong
-        class="text-decoration-underline">medio</strong></p>
-
-    <div class="equation">
-      <p class="fst-italic">23 <span class="text-danger">-</span> i = Z</p>
-    </div>
-
-    <p>Para obtener el complejo <strong>opuesto</strong> se cambian <strong class="text-decoration-underline">todos los
-        signos</strong></p>
-
-    <div class="equation">
-      <p class="fst-italic"> <span class="text-danger">-</span> 23 <span class="text-danger">+</span> i = Z</p>
-    </div>
-
-    <h1 id="lineal" class="mb-3">Lineal</h1>
-
-    <h6 class="alert alert-light" role="alert">y = m.x + b</h6>
-    <div class="py-4">
-      <div class="row mb-3">
-        <h6>Paralela</h6>
-        <div class="col">
-          m<sub>1</sub> = m<sub>2</sub>
-        </div>
-        <div class="col">
-          b<sub>1</sub> != b<sub>2</sub>
-        </div>
-        <div class="col">
-          <p class="font-monospace">S.I</p>
-        </div>
-      </div>
-
-      <div class="row mb-3">
-        <h6>Coincidente</h6>
-        <div class="col">
-          m<sub>1</sub> = m<sub>2</sub>
-        </div>
-        <div class="col">
-          b<sub>1</sub> = b<sub>2</sub>
-        </div>
-        <div class="col">
-          <p class="font-monospace">S.C.I</p>
-        </div>
-      </div>
-
-      <div class="row mb-3">
-        <h6>Perpendicular</h6>
-        <div class="col d-flex justify-content-evenly">
           <div>
-            m<sub>1</sub>
+            <p class="mb-1">Factorizada</p>
+            <span class="fst-italic">y = a.(x - x<sub>1</sub>).(x - x<sub>2</sub>).</span>
           </div>
-          <div>=</div>
           <div>
-            <span class="border-bottom border-black">-1</span><br>
-            <span>m<sub>2</sub></span>
+            <p class="mb-1">Canónica</p>
+            <span class="fst-italic">y = a.(x - x<sub>1</sub>).(x - x<sub>2</sub>).</span>
+          </div>
+          <div>
+            <p class="mb-1">Polinómica</p>
+            <span class="fst-italic">y = a.x<sup>2</sup>+ b.x + c</span>
           </div>
         </div>
-        <div class="col">
-          m<sub>1</sub> != m<sub>2</sub>
-        </div>
-        <div class="col">
-          <p class="font-monospace">S.C.D</p>
-        </div>
-      </div>
-    </div>
-
-    <h6><a href="#lineal">Armar la ecuación de la recta</a> conociendo la pendiente y un punto: <span
-        class="fst-italic">P(x<sub>1</sub> ; y<sub>1</sub> ) </span> </h6>
-
-    <div class="equation border py-3 my-5">
-      y - y<sub>1</sub> = m.( x - x<sub>1</sub> )
-    </div>
-
-    <h6 class="mb-3"><a href="#lineal">Armar la ecuación de la recta</a> conociendo dos puntos</h6>
-    <div class="d-flex justify-content-center equation mb-4">
-      <div>
-        <span class="border-bottom border-black">y - y<sub>1</sub></span><br>
-        <span>y<sub>2</sub> - y<sub>1</sub></span>
-      </div>
-      <div class="align-self-center">
-        =
-      </div>
-      <div>
-        <span class="border-bottom border-black">x - x<sub>1</sub></span><br>
-        <span>x<sub>2</sub> - x<sub>1</sub></span>
-      </div>
-    </div>
-
-
-    <h1 id="cuadratica" class="mb-4">Cuadrática</h1>
-
-    <div class="alert alert-light" role="alert">
-      <span class="fst-italic">a.x<sup>2</sup>+ b.x + c</span>
-    </div>
-
-    <a class="mb-5"  data-bs-toggle="collapse" href="#resultados" role="button" aria-expanded="false" aria-controls="resultados">
-      Formas de la cuadrática
-    </a>
-
-    <div class="collapse mb-3" id="resultados">
-      <div class="card card-body gap-3">
-        <div>
-          <p class="mb-1">Factorizada</p>
-        <span class="fst-italic">a.(x - x<sub>1</sub>).(x - x<sub>2</sub>).</span>
-        </div>
-        <div>
-          <p class="mb-1">Canónica</p>
-        <span class="fst-italic">a.(x - x<sub>1</sub>).(x - x<sub>2</sub>).</span>        
-        </div>
-        <div>
-          <p class="mb-1">Polinómica</p>
-          <span class="fst-italic">a.x<sup>2</sup>+ b.x + c</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="fst-italic  py-3 my-2">
-      <span>x = </span><span class="border-bottom border-black">-b ± √(b<sup>2</sup> - 4.a.c)</span><br>
-      <span>2.a</span>
-    </div>
-
-    
-   
-
-    <div class="d-flex flex-column align-items-center mb-3  justify-content-center">
-      <div class="d-flex flex-row">
-        <span>X<sub>v</sub></span>
-        <span class="align-self-center">=</span>
-        <div>
-          <span class="border-bottom border-black">-b</span><br><span>2.a</span>
-        </div>
-
-      </div>
-      <div class=" py-3">
-        <span>Y<sub>v</sub> = Reemplazar <span class="fst-italic">x</span> por X<sub>v</sub> en la función </span>
-      </div>
-    </div>
-    
-    <div class="row gap-3 mb-4">
-      <h4>Problema con raíces</h4>
-      <div class="d-flex justify-content-center">
-        <span>X<sub>1</sub> + X <sub>2</sub></span>
-        <span class="align-self-center">=</span>
-        <div>
-          <span class="border-bottom border-black"> -b</span><br><span>a</span>
-        </div>
       </div>
 
-      <div class="d-flex equation  justify-content-center">
-        <span>X<sub>1</sub> . X <sub>2</sub></span>
-        <span class="align-self-center">=</span>
-        <div>
-          <span class="border-bottom border-black">c</span><br><span>a</span>
-        </div>
+      <div class="fst-italic  py-3 my-2">
+        <span>x = </span><span class="border-bottom border-black">-b ± √(b<sup>2</sup> - 4.a.c)</span><br>
+        <span>2.a</span>
       </div>
 
-      
-      <div class=" py-3">
-        <h4 class="mb-4">Encontrar <span class="fst-italic">f<sub>(x)</sub> </span> cuadratica dado el vertice</h4>
-        <p class="small">Determinar la ecuación de la función cuadrática cuyo vértice es V=(<span
-            class="text-success">h</span> ; <span class="text-warning">k</span> ) y corta al eje “y”
-          en ( <span class="text-primary">x</span> ; <span class="text-danger">y</span> ).</p>
-        <p>Despejar "a":</p>
-        <div class="fst-italic mb-4"> <span class="text-danger">y</span> = a.(<span class="text-primary">x</span> -
-          <span class="text-success">h</span>)<sup>2</sup> + <span class="text-warning">k</span> </div>
-        <p class="small">Con el valor de "a". Volver a escribir la formula reemplazando: ("a", <span
-            class="text-success">h</span>, <span class="text-warning">k</span>), para obtener la forma
-          polinómica. No incluír <span class="text-primary">x</span> , <span class="text-danger">y</span>.</p>
-
-        <span class="fst-italic mb-2"> <span class="fw-semibold">y</span> = a.(<span class="fw-semibold">x</span> -
-          <span class="text-success">h</span>)<sup>2</sup> + <span class="text-warning">k</span> </span>
-      </div>
-    </div>
 
 
-    <div class="d-flex flex-column gap-4">
-      <h4 class="mb-4">Planteo de paravola</h4>
 
-      <div>
-        <h6>Reales y Distintas ( corta al eje x, dos soluciones reales distintas,corta dos veces )</h6>
-    
-        <p>(b<sup>2</sup> - 4.a.c) > 0</p>
-
-      </div>
-  
-      <div>
-        <h6>Reales e Iguales ( raíces dobles, una raíz doble real, tangente eje x = toca y rebota)</h6>
-        <p>(b<sup>2</sup> - 4.a.c) = 0</p>
-      </div>
-
-      <div>
-        <h6>Complejas Conjugadas ( no corte eje x, no tiene soluciones reales, son complejas )</h6>
-        <p>(b<sup>2</sup> - 4.a.c)
-          < 0</p>
-      </div>
-
-    </div>
-
-        <h1 id="exponencial">Exponencial</h1>
-
-        <div class="alert alert-light" role="alert">h<sub>(x)</sub>= -6 + 5<sup>x</sup></div>
-
-        <h6>Intersección con eje y</h6>
-
-
-        <div class="fst-italic py-3 ">y = -6 + 5<sup>0</sup></div>
-
-        <h6>Intersección con eje x</h6>
-
-
-        <div class="fst-italic py-3 ">
+      <div class="d-flex flex-column align-items-center mb-3  justify-content-center">
+        <div class="d-flex flex-row">
+          <span>X<sub>v</sub></span>
+          <span class="align-self-center">=</span>
           <div>
-            0 = -6 + 5<sup>x</sup>
+            <span class="border-bottom border-black">-b</span><br><span>2.a</span>
           </div>
-          <div> 6 = 5 <sup>x</sup></div>
-          <div>log 6 = log (5<sup>x</sup>)</div>
-          <div>log 6 = x.(log 5)</div>
-          <div>(log 6) / (log 5) = x</div>
-        </div>
-
-        <h6>Asintota Horizontal</h6>
-        <p>termino independiente = -6</p>
-
-
-        <h1 id="logaritmica">Logaritmica</h1>
-
-        <div class="alert alert-light" role="alert">
-          <p class="fst-italic m-0">log<sub>3</sub> ( x + 4 )</p>
-        </div>
-
-        <h6>Dominio</h6>
-        <div class="equation">
-          x + 4 > 0
-        </div>
-
-        <h6>Raíz / Intersección X</h6>
-        <p class="small fst-italic">y = 0</p>
-        <div class="equation">
-          <p>log<sub>3</sub> ( x + 4 ) = 0</p>
-          <p>3<sup>0</sup> = x + 4 </p>
 
         </div>
+        <div class=" py-3">
+          <span>Y<sub>v</sub> = Reemplazar <span class="fst-italic">x</span> por X<sub>v</sub> en la función </span>
+        </div>
+      </div>
 
-        <h6>Ordenada origen / Intersección Y</h6>
-        <p class="small fst-italic">x = 0</p>
-        <div class="equation">
-          <p>log<sub>3</sub> ( 0 + 4 )</p>
-          <p>log<sub>3</sub> 4 </p>
+      <div class="row gap-3 mb-4">
+        <h4>Problema con raíces</h4>
+        <div class="d-flex justify-content-center">
+          <span>X<sub>1</sub> + X <sub>2</sub></span>
+          <span class="align-self-center">=</span>
+          <div>
+            <span class="border-bottom border-black"> -b</span><br><span>a</span>
+          </div>
+        </div>
+
+        <div class="d-flex equation  justify-content-center">
+          <span>X<sub>1</sub> . X <sub>2</sub></span>
+          <span class="align-self-center">=</span>
+          <div>
+            <span class="border-bottom border-black">c</span><br><span>a</span>
+          </div>
+        </div>
+
+
+        <div class=" py-3">
+          <h4 class="mb-4">Encontrar <span class="fst-italic">f<sub>(x)</sub> </span> cuadratica dado el vertice</h4>
+          <p class="small">Determinar la ecuación de la función cuadrática cuyo vértice es V=(<span
+              class="text-success">h</span> ; <span class="text-warning">k</span> ) y corta al eje “y”
+            en ( <span class="text-primary">x</span> ; <span class="text-danger">y</span> ).</p>
+          <p>Despejar "a":</p>
+          <div class="fst-italic mb-4"> <span class="text-danger">y</span> = a.(<span class="text-primary">x</span> -
+            <span class="text-success">h</span>)<sup>2</sup> + <span class="text-warning">k</span>
+          </div>
+          <p class="small">Con el valor de "a". Volver a escribir la formula reemplazando: ("a", <span
+              class="text-success">h</span>, <span class="text-warning">k</span>), para obtener la forma
+            polinómica. No incluír <span class="text-primary">x</span> , <span class="text-danger">y</span>.</p>
+
+          <span class="fst-italic mb-2"> <span class="fw-semibold">y</span> = a.(<span class="fw-semibold">x</span> -
+            <span class="text-success">h</span>)<sup>2</sup> + <span class="text-warning">k</span> </span>
+        </div>
+      </div>
+
+
+      <div class="d-flex flex-column gap-4">
+        <h4 class="mb-4">Planteo de paravola</h4>
+
+        <div>
+          <h6>Reales y Distintas ( corta al eje x, dos soluciones reales distintas,corta dos veces )</h6>
+
+          <p>(b<sup>2</sup> - 4.a.c) > 0</p>
 
         </div>
 
-        <h6>Asíntota Vertical</h6>
-        <div class="equation">
-          <p> x + 4 = 0</p>
-
-
+        <div>
+          <h6>Reales e Iguales ( raíces dobles, una raíz doble real, tangente eje x = toca y rebota)</h6>
+          <p>(b<sup>2</sup> - 4.a.c) = 0</p>
         </div>
+
+        <div>
+          <h6>Complejas Conjugadas ( no corte eje x, no tiene soluciones reales, son complejas )</h6>
+          <p>(b<sup>2</sup> - 4.a.c)
+            < 0</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row bg-warning-subtle py-3">
+
+      <h1 id="exponencial">Exponencial</h1>
+
+      <div class="alert alert-secondary" role="alert">h<sub>(x)</sub>= -6 + 5<sup>x</sup></div>
+
+      <h6>Intersección con eje y</h6>
+
+
+      <div class="fst-italic py-3 ">y = -6 + 5<sup>0</sup></div>
+
+      <h6>Intersección con eje x</h6>
+
+
+      <div class="fst-italic py-3 ">
+        <div>
+          0 = -6 + 5<sup>x</sup>
+        </div>
+        <div> 6 = 5 <sup>x</sup></div>
+        <div>log 6 = log (5<sup>x</sup>)</div>
+        <div>log 6 = x.(log 5)</div>
+        <div>(log 6) / (log 5) = x</div>
+      </div>
+
+      <h6>Asintota Horizontal</h6>
+      <p>termino independiente = -6</p>
+    </div>
+
+
+    <div class="row bg-danger-subtle">
+
+      <h1 id="logaritmica">Logaritmica</h1>
+
+      <div class="alert alert-secondary" role="alert">
+        <p class="fst-italic m-0">log<sub>3</sub> ( x + 4 )</p>
+      </div>
+
+      <h6>Dominio</h6>
+      <div class="equation">
+        x + 4 > 0
+      </div>
+
+      <h6>Raíz / Intersección X</h6>
+      <p class="small fst-italic">y = 0</p>
+      <div class="equation">
+        <p>log<sub>3</sub> ( x + 4 ) = 0</p>
+        <p>3<sup>0</sup> = x + 4 </p>
+
+      </div>
+
+      <h6>Ordenada origen / Intersección Y</h6>
+      <p class="small fst-italic">x = 0</p>
+      <div class="equation">
+        <p>log<sub>3</sub> ( 0 + 4 )</p>
+        <p>log<sub>3</sub> 4 </p>
+
+      </div>
+
+      <h6>Asíntota Vertical</h6>
+      <div class="equation">
+        <p> x + 4 = 0</p>
+
+
+      </div>
+
+    </div>
 
   </main>
 
